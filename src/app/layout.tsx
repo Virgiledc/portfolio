@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
 export const metadata: Metadata = {
-	title: "Portfolio - Erwan Lajouannique",
+	title: "Portfolio - Virgile Fouché",
 	description: "Full Stack developer portfolio showcasing projects and experience",
 };
 
