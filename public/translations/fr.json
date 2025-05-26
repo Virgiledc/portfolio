@@ -1,9 +1,9 @@
 {
   "nav": {
-    "firstName": "Erwan",
-    "lastName": "Lajouannique", 
-    "job": "Votre Titre de Poste",
-    "description": "Votre description en français",
+    "firstName": "Virgile",
+    "lastName": "Fouche", 
+    "job": "Ingénieur Informatique",
+    "description": "GOAT",
     "menu": [
       { "name": "À PROPOS", "href": "#about" },
       { "name": "EXPÉRIENCE", "href": "#experience" },

@@ -1,9 +1,9 @@
 {
   "nav": {
-    "firstName": "Erwan",
-    "lastName": "Lajouannique", 
-    "job": "Your Job Title",
-    "description": "Your description in English",
+   "firstName": "Virgile",
+    "lastName": "Fouche", 
+    "job": "IT dev",
+    "description": "GOAT",
     "menu": [
       { "name": "ABOUT", "href": "#about" },
       { "name": "EXPERIENCE", "href": "#experience" },
