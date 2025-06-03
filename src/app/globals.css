@@ -42,6 +42,18 @@ body {
   background: linear-gradient(135deg, var(--navy-900) 0%, var(--blue-900) 50%, var(--navy-800) 100%);
   min-height: 100vh;
   position: relative;
+  /* Empêcher le bandeau blanc sur mobile */
+  overscroll-behavior: none;
+  -webkit-overscroll-behavior: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* Empêcher le bounce effect sur iOS */
+  overscroll-behavior: none;
+  -webkit-overscroll-behavior: none;
+  /* Couleur de fond de sécurité */
+  background: #0f172a;
 }
 
 /* Personnalisation de la scrollbar */
