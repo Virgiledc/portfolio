@@ -122,19 +122,6 @@ const NavText = () => {
         >
           {t('nav.job')}
         </motion.span>
-        <motion.span
-          className="ml-2 text-cyan-400"
-          animate={{
-            opacity: [1, 0, 1],
-          }}
-          transition={{
-            duration: 1,
-            repeat: Infinity,
-            delay: 4
-          }}
-        >
-          |
-        </motion.span>
         
         {/* Petites étoiles flottantes */}
         <motion.div

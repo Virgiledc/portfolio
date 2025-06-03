@@ -2,88 +2,93 @@
   "nav": {
     "firstName": "Virgile",
     "lastName": "Fouche", 
-    "job": "Ingénieur Informatique",
-    "description": "GOAT",
+    "job": "Développeur Full Stack",
+    "description": "Étudiant ingénieur informatique motivé, en alternance, je concilie ma passion pour les arts martiaux et la musique avec mes études.",
     "menu": [
       { "name": "À PROPOS", "href": "#about" },
-      { "name": "EXPÉRIENCE", "href": "#experience" },
-      { "name": "PROJETS", "href": "#projects" }
+      { "name": "FORMATIONS", "href": "#experience" },
+      { "name": "EXPÉRIENCES", "href": "#projects" }
     ]
   },
   "about": {
     "title": "À Propos de Moi",
     "korokSeeds": "graines de Korok",
     "paragraphs": [
-      "Je suis un développeur passionné par la création d'interfaces utilisateur accessibles et pixel-perfect qui allient design réfléchi et ingénierie robuste. Mon travail préféré se situe à l'intersection du design et du développement, créant des expériences qui non seulement sont visuellement attrayantes mais sont méticuleusement construites pour les performances et l'utilisabilité.",
-      "Actuellement, je suis Ingénieur Front-End Senior chez Klaviyo, spécialisé en accessibilité. Je contribue à la création et à la maintenance de composants UI qui alimentent le frontend de Klaviyo, en m'assurant que notre plateforme respecte les standards d'accessibilité web et les meilleures pratiques pour offrir une expérience utilisateur inclusive.",
-      "Dans le passé, j'ai eu l'opportunité de développer des logiciels dans une variété d'environnements — des agences de publicité et grandes corporations aux start-ups et petits studios de produits numériques. De plus, j'ai également publié un cours vidéo complet il y a quelques années, guidant les apprenants dans la construction d'une application web avec l'API Spotify.",
-      "Pendant mon temps libre, je fais généralement de l'escalade, je lis, je traîne avec ma femme et mes deux chats, ou je cours dans Hyrule à la recherche de {korokSeeds}."
+      "Je suis un développeur Full Stack passionné, actuellement en 5ème année d'études d'ingénieur informatique à l'EPITA Paris. Mon parcours allie formation académique solide et expérience professionnelle enrichissante grâce à l'alternance.",
+      "Autonome, curieux et investi, je mets mes compétences techniques et humaines au service des équipes dans lesquelles j'évolue. Mon expertise couvre l'ensemble de la stack de développement, avec une solide expérience en Python, Java, JavaScript et les frameworks modernes.",
+      "Ma polyvalence me permet de m'adapter facilement aux différents environnements techniques, que ce soit pour le développement d'APIs robustes, la création d'interfaces utilisateur intuitives ou la mise en place de solutions DevOps performantes.",
+      "En dehors du développement, je pratique le karaté au niveau national et je fais de la musique en concert, deux passions qui m'apportent discipline, créativité et gestion du stress - des qualités que je transpose naturellement dans mon travail de développeur."
     ]
   },
   "experiences": {
-    "title": "Où j'ai travaillé",
+    "title": "Formations",
     "list": [
       {
-        "date": "2024 - PRÉSENT",
-        "title": "Ingénieur Principal . Upstatement",
-        "description": "Conception, développement et livraison de sites web de haute qualité, systèmes de design, applications mobiles et expériences numériques pour une gamme variée de projets clients, notamment Harvard Business School, Everytown for Gun Safety, Pratt Institute, Koala Health, Vanderbilt University, The 19th News, et bien d'autres. Leadership au sein du département d'ingénierie par une collaboration étroite, le partage de connaissances et la direction du développement d'outils internes.",
+        "date": "2023 - 2025",
+        "title": "Diplôme d'Ingénieur Informatique . EPITA Paris",
+        "description": "Formation d'ingénieur informatique de haut niveau avec spécialisation en développement logiciel, architecture des systèmes et gestion de projets techniques. Cursus axé sur les technologies émergentes et les méthodologies de développement modernes.",
         "languages": [
-          "JavaScript",
-          "TypeScript", 
-          "HTML & CSS",
-          "React",
-          "Next.js",
-          "React Native",
-          "WordPress",
-          "Contentful",
-          "Node.js",
-          "PHP"
-        ],
-        "links": [
-          { "name": "MusicKit.js", "url": "https://google.com" },
-          { "name": "9to5Mac", "url": "https://google.com" }
+          "Algorithmique avancée",
+          "Architecture logicielle",
+          "Gestion de projet",
+          "Intelligence artificielle",
+          "Sécurité informatique",
+          "DevOps",
+          "Management d'équipe"
         ]
       },
       {
-        "date": "2018 - 2024",
-        "title": "Développeur Principal Full Stack",
-        "description": "Conception, développement et livraison de sites web de haute qualité pour des clients notamment Harvard Business School, Everytown for Gun Safety, Pratt Institute, Koala Health, Vanderbilt University, The 19th News, et plus encore. Leadership au sein du département d'ingénierie par une collaboration étroite, le partage de connaissances et la direction du développement d'outils internes.",
+        "date": "2022 - 2023",
+        "title": "Bachelor Développeur et Concepteur d'Applications . CESI Bordeaux",
+        "description": "Formation professionnalisante orientée développement d'applications web et mobiles. Apprentissage des méthodologies agiles, conception d'architectures applicatives et développement full-stack avec une approche projet constante.",
         "languages": [
+          "Développement web",
+          "Conception d'applications",
+          "Méthodes agiles",
+          "Base de données",
           "JavaScript",
-          "TypeScript",
-          "HTML & CSS", 
-          "Contentful",
-          "Node.js",
-          "PHP"
+          "Python",
+          "Gestion de projet"
+        ]
+      },
+      {
+        "date": "2020 - 2022",
+        "title": "DUT Informatique . IUT La Rochelle Université",
+        "description": "Formation fondamentale en informatique couvrant les bases de la programmation, l'algorithmique, les systèmes et réseaux. Première approche du développement logiciel et des bases de données avec de nombreux projets pratiques.",
+        "languages": [
+          "Algorithmique",
+          "Programmation",
+          "Base de données",
+          "Systèmes et réseaux",
+          "C/C++",
+          "Java",
+          "SQL"
         ]
       }
     ]
   },
   "projects": {
-    "title": "Projets Phares",
+    "title": "Expériences Professionnelles",
     "viewProject": "Voir le Projet",
     "github": "GitHub",
     "list": [
       {
-        "title": "Site Portfolio",
-        "description": "Un site portfolio personnel développé avec Next.js et Framer Motion pour présenter mon travail et mon expérience.",
-        "technologies": ["Next.js", "React", "TypeScript", "Framer Motion", "Tailwind CSS"],
-        "link": "https://portfolio.com",
-        "github": "https://github.com/portfolio"
+        "title": "Développeur Full Stack - Sopra Steria",
+        "description": "ESN, département ministère des armées : Développement d'API & front-end pour des applications critiques. Travail en équipe agile sur des projets de grande envergure avec des exigences de sécurité élevées.",
+        "technologies": ["Java", "Spring Boot", "React JS", "API REST", "Git", "Agile"],
+        "date": "2024-2025 | Alternance"
       },
       {
-        "title": "Application de Streaming Musical",
-        "description": "Une application web qui permet aux utilisateurs de rechercher et d'écouter de la musique en utilisant l'API Spotify.",
-        "technologies": ["React", "Node.js", "Express", "Spotify API"],
-        "link": "https://music-app.com",
-        "github": "https://github.com/music-app"
+        "title": "Développeur Ingénieur Full Stack - Assystem",
+        "description": "Assystem, entreprise de transition écologique des bâtiments : Développement d'applications web internes pour optimiser la gestion énergétique. Conception d'interfaces utilisateur modernes et d'APIs performantes.",
+        "technologies": ["Python", "FastAPI", "JavaScript", "Vue.js", "Angular", "DevOps"],
+        "date": "2023-2024 | Alternance"
       },
       {
-        "title": "Plateforme E-commerce",
-        "description": "Une plateforme e-commerce full-stack avec authentification utilisateur, catalogue de produits et traitement des paiements.",
-        "technologies": ["Next.js", "MongoDB", "Stripe", "Auth0"],
-        "link": "https://ecommerce.com",
-        "github": "https://github.com/ecommerce"
+        "title": "Développeur Full Stack (tendance Back-end) - Netcarbon",
+        "description": "Netcarbon, startup écologique de stockage de carbone : Développement d'API, mise en place de pipeline CI/CD, développement front-end. Contribution à l'innovation écologique par la technologie.",
+        "technologies": ["Python", "FastAPI", "GCP", "GitHub Actions", "JavaScript", "VueJS", "CI/CD"],
+        "date": "2022-2023 | Alternance"
       }
     ]
   }

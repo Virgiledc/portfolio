@@ -2,88 +2,93 @@
   "nav": {
    "firstName": "Virgile",
     "lastName": "Fouche", 
-    "job": "IT dev",
-    "description": "GOAT",
+    "job": "Full Stack Developer",
+    "description": "Motivated computer engineering student in work-study program, balancing my passion for martial arts and music with my studies.",
     "menu": [
       { "name": "ABOUT", "href": "#about" },
-      { "name": "EXPERIENCE", "href": "#experience" },
-      { "name": "PROJECTS", "href": "#projects" }
+      { "name": "EDUCATION", "href": "#experience" },
+      { "name": "EXPERIENCE", "href": "#projects" }
     ]
   },
   "about": {
     "title": "About Me",
     "korokSeeds": "Korok seeds",
     "paragraphs": [
-      "I'm a developer passionate about crafting accessible, pixel-perfect user interfaces that blend thoughtful design with robust engineering. My favorite work lies at the intersection of design and development, creating experiences that not only look great but are meticulously built for performance and usability.",
-      "Currently, I'm a Senior Front-End Engineer at Klaviyo, specializing in accessibility. I contribute to the creation and maintenance of UI components that power Klaviyo's frontend, ensuring our platform meets web accessibility standards and best practices to deliver an inclusive user experience.",
-      "In the past, I've had the opportunity to develop software across a variety of settings — from advertising agencies and large corporations to start-ups and small digital product studios. Additionally, I also released a comprehensive video course a few years ago, guiding learners through building a web app with the Spotify API.",
-      "In my spare time, I'm usually climbing, reading, hanging out with my wife and two cats, or running around Hyrule searching for {korokSeeds}."
+      "I'm a passionate Full Stack developer, currently in my 5th year of computer engineering studies at EPITA Paris. My journey combines solid academic training with enriching professional experience through work-study programs.",
+      "Autonomous, curious, and committed, I bring my technical and human skills to the teams I work with. My expertise covers the entire development stack, with solid experience in Python, Java, JavaScript, and modern frameworks.",
+      "My versatility allows me to easily adapt to different technical environments, whether developing robust APIs, creating intuitive user interfaces, or implementing high-performance DevOps solutions.",
+      "Outside of development, I practice karate at the national level and perform music in concerts - two passions that bring me discipline, creativity, and stress management skills that I naturally transfer to my work as a developer."
     ]
   },
   "experiences": {
-    "title": "Where I've Worked",
+    "title": "Education",
     "list": [
       {
-        "date": "2024 - PRESENT",
-        "title": "Lead Engineer . Upstatement",
-        "description": "Build, style, and ship high-quality websites, design systems, mobile apps, and digital experiences for a diverse array of projects for clients including Harvard Business School, Everytown for Gun Safety, Pratt Institute, Koala Health, Vanderbilt University, The 19th News, and more. Provide leadership within engineering department through close collaboration, knowledge shares, and spearheading the development of internal tools.",
+        "date": "2023 - 2025",
+        "title": "Computer Engineering Degree . EPITA Paris",
+        "description": "High-level computer engineering program with specialization in software development, system architecture, and technical project management. Curriculum focused on emerging technologies and modern development methodologies.",
         "languages": [
-          "JavaScript",
-          "TypeScript", 
-          "HTML & CSS",
-          "React",
-          "Next.js",
-          "React Native",
-          "WordPress",
-          "Contentful",
-          "Node.js",
-          "PHP"
-        ],
-        "links": [
-          { "name": "MusicKit.js", "url": "https://google.com" },
-          { "name": "9to5Mac", "url": "https://google.com" }
+          "Advanced Algorithms",
+          "Software Architecture",
+          "Project Management",
+          "Artificial Intelligence",
+          "Computer Security",
+          "DevOps",
+          "Team Management"
         ]
       },
       {
-        "date": "2018 - 2024",
-        "title": "Lead Dev Full Stack",
-        "description": "Build, style, and ship high-quality websites for clients including Harvard Business School, Everytown for Gun Safety, Pratt Institute, Koala Health, Vanderbilt University, The 19th News, and more. Provide leadership within engineering department through close collaboration, knowledge shares, and spearheading the development of internal tools.",
+        "date": "2022 - 2023",
+        "title": "Bachelor in Application Development and Design . CESI Bordeaux",
+        "description": "Professional training focused on web and mobile application development. Learning agile methodologies, application architecture design, and full-stack development with a constant project-based approach.",
         "languages": [
+          "Web Development",
+          "Application Design",
+          "Agile Methods",
+          "Databases",
           "JavaScript",
-          "TypeScript",
-          "HTML & CSS", 
-          "Contentful",
-          "Node.js",
-          "PHP"
+          "Python",
+          "Project Management"
+        ]
+      },
+      {
+        "date": "2020 - 2022",
+        "title": "Computer Science DUT . IUT La Rochelle University",
+        "description": "Fundamental computer science training covering programming basics, algorithms, systems and networks. First approach to software development and databases with numerous practical projects.",
+        "languages": [
+          "Algorithms",
+          "Programming",
+          "Databases",
+          "Systems and Networks",
+          "C/C++",
+          "Java",
+          "SQL"
         ]
       }
     ]
   },
   "projects": {
-    "title": "Featured Projects",
+    "title": "Professional Experience",
     "viewProject": "View Project",
     "github": "GitHub",
     "list": [
       {
-        "title": "Portfolio Website",
-        "description": "A personal portfolio website built with Next.js and Framer Motion to showcase my work and experience.",
-        "technologies": ["Next.js", "React", "TypeScript", "Framer Motion", "Tailwind CSS"],
-        "link": "https://portfolio.com",
-        "github": "https://github.com/portfolio"
+        "title": "Full Stack Developer - Sopra Steria",
+        "description": "ESN, ministry of defense department: API & front-end development for critical applications. Agile team work on large-scale projects with high security requirements.",
+        "technologies": ["Java", "Spring Boot", "React JS", "REST API", "Git", "Agile"],
+        "date": "2024-2025 | Work-study"
       },
       {
-        "title": "Music Streaming App",
-        "description": "A web application that allows users to search for and play music using the Spotify API.",
-        "technologies": ["React", "Node.js", "Express", "Spotify API"],
-        "link": "https://music-app.com",
-        "github": "https://github.com/music-app"
+        "title": "Full Stack Engineer Developer - Assystem",
+        "description": "Assystem, ecological transition company for buildings: Development of internal web applications to optimize energy management. Design of modern user interfaces and high-performance APIs.",
+        "technologies": ["Python", "FastAPI", "JavaScript", "Vue.js", "Angular", "DevOps"],
+        "date": "2023-2024 | Work-study"
       },
       {
-        "title": "E-commerce Platform",
-        "description": "A full-stack e-commerce platform with user authentication, product catalog, and payment processing.",
-        "technologies": ["Next.js", "MongoDB", "Stripe", "Auth0"],
-        "link": "https://ecommerce.com",
-        "github": "https://github.com/ecommerce"
+        "title": "Full Stack Developer (Back-end focus) - Netcarbon",
+        "description": "Netcarbon, ecological carbon storage startup: API development, CI/CD pipeline setup, front-end development. Contributing to ecological innovation through technology.",
+        "technologies": ["Python", "FastAPI", "GCP", "GitHub Actions", "JavaScript", "VueJS", "CI/CD"],
+        "date": "2022-2023 | Work-study"
       }
     ]
   }

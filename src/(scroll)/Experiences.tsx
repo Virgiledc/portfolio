@@ -45,7 +45,7 @@ const Link = ({ link }: { link: ILink }) => {
 
 const TagLanguage = ({ language }: { language: string }) => {
 	return (
-		<motion.div 
+		<motion.div
 			className="rounded-xl text-xs font-medium bg-slate-700/50 text-blue-200 w-fit px-3 py-2
 			          border border-slate-600/50 hover:border-blue-500/50 hover:bg-slate-700/70
 			          hover:text-blue-100 transition-all duration-300 cursor-default"
@@ -60,181 +60,74 @@ const ExperienceCard = ({ experience, index }: { experience: IExperience; index:
 	return (
 		<motion.div 
 			className="w-full rounded-2xl mb-6 group"
-			initial={{ opacity: 0, x: -50, y: 30 }}
+			initial={{ opacity: 0, y: 20 }}
 			whileInView={{ 
 				opacity: 1, 
-				x: 0, 
 				y: 0,
 				transition: { 
-					type: "spring",
-					stiffness: 100,
-					damping: 20,
+					duration: 0.4,
 					delay: index * 0.1
 				}
 			}}
-			viewport={{ once: false, amount: 0.3 }}
+			viewport={{ once: true, amount: 0.3 }}
 		>
-			<motion.div 
+			<div 
 				className="flex flex-col lg:flex-row w-full h-full p-6 lg:p-8 rounded-2xl cursor-pointer relative
 				          bg-slate-800/30 backdrop-blur-sm border border-slate-700/50
-				          hover:bg-slate-800/50 hover:border-blue-500/30 transition-all duration-500 overflow-hidden"
-				whileHover={{ 
-					scale: 1.02, 
-					y: -5,
-					boxShadow: "0 20px 40px rgba(59, 130, 246, 0.15)"
-				}}
-				transition={{ duration: 0.3 }}
+				          hover:bg-slate-800/50 hover:border-blue-500/30 transition-all duration-150 overflow-hidden"
 			>
-				{/* Effet de lueur en arrière-plan statique */}
-				<motion.div
-					className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-cyan-500/5 rounded-2xl opacity-0 group-hover:opacity-100"
-					transition={{ duration: 0.5 }}
-				/>
-				
+				{/* Effet de lueur en arrière-plan au survol */}
+				<div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-transparent to-cyan-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 				{/* Ligne décorative à gauche (seulement sur desktop) */}
-				<motion.div
-					className="hidden lg:block absolute left-0 top-8 bottom-8 w-1 rounded-full opacity-30 group-hover:opacity-100 bg-gradient-to-b from-blue-500 to-cyan-500"
-					transition={{ duration: 0.5 }}
-				/>
+				<div className="hidden lg:block absolute left-0 top-8 bottom-8 w-1 rounded-full opacity-30 group-hover:opacity-100 bg-gradient-to-b from-blue-500 to-cyan-500 transition-opacity duration-150" />
 
 				{/* Ligne décorative en haut (seulement sur mobile) */}
-				<motion.div
-					className="lg:hidden absolute top-0 left-6 right-6 h-1 rounded-full opacity-30 group-hover:opacity-100 bg-gradient-to-r from-blue-500 to-cyan-500"
-					transition={{ duration: 0.5 }}
-				/>
-
-				{/* Petites étoiles qui apparaissent au survol */}
-				<motion.div
-					className="absolute top-4 right-4 opacity-0 group-hover:opacity-100"
-					animate={{
-						rotate: [0, 360],
-						scale: [1, 1.2, 1],
-					}}
-					transition={{
-						duration: 2,
-						repeat: Infinity,
-					}}
-				>
-					✨
-				</motion.div>
+				<div className="lg:hidden absolute top-0 left-6 right-6 h-1 rounded-full opacity-30 group-hover:opacity-100 bg-gradient-to-r from-blue-500 to-cyan-500 transition-opacity duration-150" />
 
 				{/* Date - en haut sur mobile, à gauche sur desktop */}
 				<div className="w-full lg:w-[140px] flex-shrink-0 relative mb-4 lg:mb-0">
-					<motion.span 
-						className="text-blue-300 font-semibold text-sm tracking-wide block"
-						initial={{ opacity: 0, x: -20 }}
-						whileInView={{ 
-							opacity: 1, 
-							x: 0,
-							transition: { delay: (index * 0.1) + 0.2 }
-						}}
-						viewport={{ once: false }}
-					>
+					<span className="text-blue-300 font-semibold text-sm tracking-wide block">
 						{experience.date}
-					</motion.span>
+					</span>
 					
 					{/* Point décoratif - à droite sur desktop, en bas sur mobile */}
-					<motion.div
-						className="absolute lg:-right-2 lg:top-1 -bottom-2 left-0 lg:left-auto w-2 h-2 bg-blue-400 rounded-full"
-						animate={{ 
-							scale: [1, 1.2, 1],
-							opacity: [0.6, 1, 0.6]
-						}}
-						transition={{ 
-							duration: 2,
-							repeat: Infinity,
-							delay: index * 0.5
-						}}
-					/>
+					<div className="absolute lg:-right-2 lg:top-1 -bottom-2 left-0 lg:left-auto w-2 h-2 bg-blue-400 rounded-full opacity-60" />
 				</div>
 				
 				{/* Contenu principal */}
 				<div className="flex flex-col gap-4 flex-1 relative z-10">
-					<motion.h3 
-						className="text-lg font-bold text-white hover:text-blue-300 transition-colors duration-300"
-						initial={{ opacity: 0 }}
-						whileInView={{ 
-							opacity: 1,
-							transition: { delay: (index * 0.1) + 0.3 }
-						}}
-						viewport={{ once: false }}
-					>
+					<h3 className="text-lg font-bold text-white hover:text-blue-300 transition-colors duration-150">
 						{experience.title}
-					</motion.h3>
+					</h3>
 					
-					<motion.p 
-						className="text-slate-300 text-sm leading-relaxed"
-						initial={{ opacity: 0 }}
-						whileInView={{ 
-							opacity: 1,
-							transition: { delay: (index * 0.1) + 0.4 }
-						}}
-						viewport={{ once: false }}
-					>
+					<p className="text-slate-300 text-sm leading-relaxed">
 						{experience.description}
-					</motion.p>
+					</p>
 					
 					{/* Liens */}
 					{experience.links && experience.links.length > 0 && (
-						<motion.div 
-							className="flex gap-2 flex-wrap"
-							initial={{ opacity: 0, y: 10 }}
-							whileInView={{ 
-								opacity: 1, 
-								y: 0,
-								transition: { delay: (index * 0.1) + 0.5 }
-							}}
-							viewport={{ once: false }}
-						>
+						<div className="flex gap-2 flex-wrap">
 							{experience.links.map((link, linkIndex) => (
-								<motion.div
-									key={linkIndex}
-									initial={{ opacity: 0, scale: 0.8 }}
-									whileInView={{ 
-										opacity: 1, 
-										scale: 1,
-										transition: { delay: (index * 0.1) + 0.5 + (linkIndex * 0.1) }
-									}}
-									viewport={{ once: false }}
-								>
+								<div key={linkIndex}>
 									<Link link={link} />
-								</motion.div>
+								</div>
 							))}
-						</motion.div>
+						</div>
 					)}
 					
 					{/* Technologies */}
-					<motion.div 
-						className="flex gap-2 flex-wrap"
-						initial={{ opacity: 0, y: 10 }}
-						whileInView={{ 
-							opacity: 1, 
-							y: 0,
-							transition: { delay: (index * 0.1) + 0.6 }
-						}}
-						viewport={{ once: false }}
-					>
+					<div className="flex gap-2 flex-wrap">
 						{experience.languages?.map((language, langIndex) => (
-							<motion.div
-								key={langIndex}
-								initial={{ opacity: 0, x: -10 }}
-								whileInView={{ 
-									opacity: 1, 
-									x: 0,
-									transition: { delay: (index * 0.1) + 0.6 + (langIndex * 0.05) }
-								}}
-								viewport={{ once: false }}
-							>
+							<div key={langIndex}>
 								<TagLanguage language={language} />
-							</motion.div>
+							</div>
 						))}
-					</motion.div>
+					</div>
 				</div>
-			</motion.div>
+			</div>
 		</motion.div>
 	);
 };
-
 const Experiences = () => {
 	const { t } = useTranslation();
 	const experiences: IExperience[] = t('experiences.list', { returnObjects: true }) as IExperience[] || [];
@@ -248,13 +141,13 @@ const Experiences = () => {
 				whileInView={{ scale: 1, opacity: 1 }}
 				transition={{ duration: 2 }}
 			/>
-			
+
 			<motion.div
 				className="relative mb-12"
 				initial={{ opacity: 0, x: -30 }}
 				whileInView={{ opacity: 1, x: 0 }}
 				viewport={{ once: false, amount: 0.8 }}
-				transition={{ 
+				transition={{
 					duration: 0.6,
 					type: "spring",
 					stiffness: 100
@@ -262,7 +155,7 @@ const Experiences = () => {
 			>
 				<h2 className="text-2xl lg:text-3xl font-bold text-white mb-4 relative">
 					{t('experiences.title')}
-					
+
 					{/* Ligne décorative sous le titre */}
 					<motion.div
 						className="absolute -bottom-2 left-0 h-0.5 bg-gradient-to-r from-blue-500 to-cyan-500"
@@ -272,7 +165,7 @@ const Experiences = () => {
 					/>
 				</h2>
 			</motion.div>
-			
+
 			<div className="space-y-2">
 				{experiences.map((experience, index) => (
 					<ExperienceCard key={index} experience={experience} index={index} />

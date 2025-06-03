@@ -1,5 +1,4 @@
 @import "tailwindcss";
-
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 :root {
@@ -43,22 +42,6 @@ body {
   background: linear-gradient(135deg, var(--navy-900) 0%, var(--blue-900) 50%, var(--navy-800) 100%);
   min-height: 100vh;
   position: relative;
-}
-
-/* Effet de grille subtile en arrière-plan */
-body::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: 
-    linear-gradient(rgba(59, 130, 246, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(59, 130, 246, 0.03) 1px, transparent 1px);
-  background-size: 50px 50px;
-  pointer-events: none;
-  z-index: 0;
 }
 
 /* Personnalisation de la scrollbar */
@@ -108,197 +91,9 @@ input, textarea {
   user-select: text;
 }
 
-/* Effet de lueur bleue subtile */
-.glow-blue {
-  box-shadow: 
-    0 0 20px rgba(59, 130, 246, 0.15),
-    0 0 40px rgba(59, 130, 246, 0.1),
-    0 0 80px rgba(59, 130, 246, 0.05);
-}
-
-/* Animation de pulsation subtile */
-@keyframes subtle-pulse {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.8;
-  }
-}
-
-.pulse-subtle {
-  animation: subtle-pulse 3s ease-in-out infinite;
-}
-
-/* Effet de particules flottantes */
-.floating-particles {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  z-index: 1;
-}
-
-.particle {
-  position: absolute;
-  width: 2px;
-  height: 2px;
-  background: var(--blue-400);
-  border-radius: 50%;
-  opacity: 0.3;
-}
-
-/* Animations fantaisistes */
-@keyframes float-magic {
-  0%, 100% {
-    transform: translateY(0px) rotate(0deg);
-  }
-  33% {
-    transform: translateY(-20px) rotate(120deg);
-  }
-  66% {
-    transform: translateY(-10px) rotate(240deg);
-  }
-}
-
-@keyframes sparkle {
-  0%, 100% {
-    opacity: 0;
-    transform: scale(0) rotate(0deg);
-  }
-  50% {
-    opacity: 1;
-    transform: scale(1) rotate(180deg);
-  }
-}
-
-@keyframes rainbow-border {
-  0% {
-    border-color: rgba(59, 130, 246, 0.5);
-  }
-  25% {
-    border-color: rgba(34, 211, 238, 0.5);
-  }
-  50% {
-    border-color: rgba(167, 139, 250, 0.5);
-  }
-  75% {
-    border-color: rgba(236, 72, 153, 0.5);
-  }
-  100% {
-    border-color: rgba(59, 130, 246, 0.5);
-  }
-}
-
-.magic-hover {
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.magic-hover:hover {
-  animation: float-magic 2s ease-in-out infinite;
-}
-
-.sparkle-effect {
-  position: relative;
-  overflow: visible;
-}
-
-.sparkle-effect::before,
-.sparkle-effect::after {
-  content: '✨';
-  position: absolute;
-  font-size: 12px;
-  animation: sparkle 2s ease-in-out infinite;
-  pointer-events: none;
-}
-
-.sparkle-effect::before {
-  top: -5px;
-  left: -5px;
-  animation-delay: 0s;
-}
-
-.sparkle-effect::after {
-  bottom: -5px;
-  right: -5px;
-  animation-delay: 1s;
-}
-
-/* Effet de typing pour le texte */
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes blink-caret {
-  from, to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: var(--cyan-400);
-  }
-}
-
-.typing-effect {
-  overflow: hidden;
-  border-right: 2px solid var(--cyan-400);
-  white-space: nowrap;
-  margin: 0 auto;
-  animation: 
-    typing 3.5s steps(40, end),
-    blink-caret 1s step-end infinite;
-}
-
-/* Effet de constellation */
-.constellation-line {
-  position: absolute;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, var(--blue-400), transparent);
-  opacity: 0;
-  animation: constellation-pulse 4s ease-in-out infinite;
-}
-
-@keyframes constellation-pulse {
-  0%, 100% {
-    opacity: 0;
-    transform: scaleX(0);
-  }
-  50% {
-    opacity: 0.6;
-    transform: scaleX(1);
-  }
-}
-
-/* Effet de morphing sur les boutons */
+/* Effet de morphing sur les boutons - simplifié */
 .morph-button {
   background: linear-gradient(45deg, var(--blue-600), var(--cyan-500));
-  background-size: 200% 200%;
-  animation: gradient-morph 4s ease infinite;
-}
-
-@keyframes gradient-morph {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-/* Bordures avec dégradé bleu */
-.border-gradient-blue {
-  border: 1px solid transparent;
-  background: linear-gradient(var(--navy-800), var(--navy-800)) padding-box,
-              linear-gradient(135deg, var(--blue-600), var(--cyan-500)) border-box;
 }
 
 /* Effet de glassmorphism */
@@ -316,14 +111,37 @@ input, textarea {
   background-clip: text;
 }
 
-/* Effet hover moderne */
+/* Effet hover moderne - simplifié */
 .hover-lift {
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hover-lift:hover {
   transform: translateY(-2px);
-  box-shadow: 
-    0 10px 25px rgba(59, 130, 246, 0.15),
-    0 4px 15px rgba(59, 130, 246, 0.1);
+}
+
+/* Optimisations pour les performances */
+* {
+  will-change: auto;
+}
+
+/* Animations simplifiées pour les petits écrans */
+@media (max-width: 768px) {
+  .magic-hover:hover {
+    animation: none;
+  }
+  
+  .sparkle-effect::before,
+  .sparkle-effect::after {
+    display: none;
+  }
+}
+
+/* Désactiver les animations complexes pour économiser les ressources */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

@@ -83,21 +83,7 @@ const NavMenu = () => {
 							href={step.href}
 							className="group flex items-center cursor-pointer relative py-3 px-4 rounded-xl transition-all duration-300"
 							whileHover={{ x: 8 }}
-							whileTap={{ 
-								scale: 0.98,
-								transition: { duration: 0.1 }
-							}}
-							onTap={() => {
-								// Effet visuel de "clic magique"
-								const ripple = document.createElement('div');
-								ripple.className = 'absolute inset-0 bg-cyan-400/30 rounded-xl animate-ping';
-								ripple.style.animationDuration = '0.3s';
-								const target = document.activeElement as HTMLElement;
-								if (target) {
-									target.appendChild(ripple);
-									setTimeout(() => ripple.remove(), 300);
-								}
-							}}
+							// Suppression des animations de clic
 						>
 							{/* Arrière-plan pour l'élément sélectionné */}
 							<AnimatePresence>
