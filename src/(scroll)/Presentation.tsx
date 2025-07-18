@@ -39,7 +39,7 @@ const Presentation = () => {
       x: 0,
       filter: "blur(0px)",
       transition: { 
-        type: "spring",
+        type: "spring" as const,
         damping: 20,
         stiffness: 100,
         duration: 0.8

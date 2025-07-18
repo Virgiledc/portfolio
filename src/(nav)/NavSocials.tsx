@@ -4,6 +4,7 @@ import GithubSvg from "@/app/svgs/GithubSvg";
 import LinkedIn from "@/app/svgs/LinkedIn";
 import { JSX } from "react";
 import { motion } from "framer-motion";
+import { easeInOut } from "framer-motion";
 
 interface ISocial {
   name: string;
@@ -32,7 +33,7 @@ const iconVariants = {
     transition: {
       rotate: {
         duration: 0.4,
-        ease: "easeInOut"
+        ease: easeInOut,
       },
       scale: {
         duration: 0.2

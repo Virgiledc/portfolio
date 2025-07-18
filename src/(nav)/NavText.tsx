@@ -25,7 +25,7 @@ const NavText = () => {
       y: 0,
       filter: "blur(0px)",
       transition: {
-        type: "spring",
+        type: "spring" as const,
         damping: 20,
         stiffness: 100,
         duration: 0.8
@@ -39,7 +39,7 @@ const NavText = () => {
       opacity: 1, 
       scale: 1,
       transition: {
-        type: "spring",
+        type: "spring" as const,
         damping: 15,
         stiffness: 120,
         duration: 1
